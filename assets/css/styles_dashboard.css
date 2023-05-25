@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.borde {
+  border: 1px solid #ccc;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+nav,
+main,
+aside,
+section,
+footer,
+div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  height: 50px;
+}
+nav a {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+}
+.logo {
+  flex: 20%;
+  justify-content: center;
+}
+.logo a {
+  background: #fff;
+}
+.logo img {
+  height: 50px;
+  padding: 5px;
+}
+.navegacion {
+  flex: 65%;
+  justify-content: flex-start;
+  background: #fff;
+}
+.navegacion .inicio {
+  flex: 1;
+  background: #666;
+}
+.navegacion .navega {
+  flex: 10;
+  justify-content: flex-end;
+}
+.navegacion .navega a {
+  flex: 0;
+  background: #666;
+}
+.navegacion .inicio a:hover,
+.navegacion .navega a:hover {
+  background: #000;
+}
+.ingreso {
+  flex: 15%;
+  background: #222;
+}
+.ingreso a {
+  color: #fff;
+}
+.ingreso a:hover {
+  background: #000;
+}
+main {
+  padding-top: 50px;
+  height: 92vh;
+}
+aside {
+  height: 100%;
+  width: 20%;
+  padding: 5px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  background: #444;
+}
+aside .modulo {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  background: #fff;
+}
+aside .modulo a {
+  background: #fff;
+}
+section {
+  width: 80%;
+  flex-flow: column nowrap;
+  padding: 5px;
+  background: #444;
+}
+section .migas,
+section .controles {
+  padding: 5px;
+  background: #fff;
+}
+section .migas {
+  height: 40px;
+  align-items: center;
+}
+section .controles {
+  flex: 0;
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  background: #666;
+}
+section .controles a {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  padding: 5px 15px;
+  margin: 0 5px;
+}
+section .principal {
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 10px;
+  background: #fff;
+}
+footer {
+  height: 8vh;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: #222;
+  color: #fff;
+  font-size: 0.8em;
+}
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.form-header,
+.form-body,
+.form-footer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.table-header,
+.impreso-header,
+.grafico-header,
+.form-header {
+  justify-content: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+}
+.form-body {
+  flex-flow: column nowrap;
+  padding: 15px;
+  background: #ddd;
+}
+.form-control {
+  flex: 1;
+}
+.form-control label {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.form-control input,
+.form-control select,
+.form-control textarea {
+  flex: 4;
+  padding: 10px;
+  margin: 2px;
+  font-size: 0.9em;
+}
+.form-control .label-textarea {
+  align-items: flex-start;
+}
+.form-control textarea {
+  height: 200px;
+  resize: none;
+}
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+.file-select::before {
+  background-color: #666;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: "Seleccionar Archivo";
+  width: 152px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.form-footer {
+  height: 60px;
+  justify-content: center;
+  padding: 5px;
+  background: #666;
+}
+.form-footer input,
+.form-footer a {
+  flex: 1;
+  background: #222;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  margin: 3px;
+  font-size: 1em;
+}
+.form-footer a {
+  display: flex;
+  flex-flow: row nowrap;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.form-footer .olvido {
+  flex: 0.5;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 13px;
+  text-align: end;
+  font-size: 0.8em;
+  background: #666;
+}
+table {  
+  border-collapse: collapse;
+  width: 100%;
+  margin: 5px 0;  
+}
+table.roles {  
+  width: 60%;  
+  align-self: center;  
+}  
+th{
+  background: #222;
+  color: #fff;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  text-align: center;
+  padding: 8px;
+}
+.td-izq{
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

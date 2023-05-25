@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.borde{
+    border: 1px solid #ccc;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;    
+    display: flex;
+    flex-flow: column nowrap;    
+}
+nav, main, section, footer, div{    
+    display: flex;
+    flex-flow: row nowrap;    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    height: 50px;
+}
+nav a{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+}
+.logo{
+    flex: 20%;
+    justify-content: center;
+    background: #fff;
+}
+.logo img{    
+    height: 50px;
+    padding: 5px;
+}
+.navegacion{
+    flex: 65%;    
+    justify-content: flex-start;
+    background: #aaa;
+}
+.navegacion .inicio{
+    flex: 1;
+    background: #666;
+}
+.navegacion .navega{
+    flex: 10;
+    justify-content: flex-end;    
+}
+.navegacion .navega a{
+    flex: 0;
+    background: #666;
+}
+.navegacion .inicio a:hover,
+.navegacion .navega a:hover{
+    background: #000;
+}
+.ingreso{
+    flex: 15%;    
+    background: #333;
+}
+.ingreso a{
+    color: #fff;
+}
+.ingreso a:hover{
+    background: #000;
+}
+main{    
+    flex-flow: column nowrap;
+    padding: 55px 5px 0 5px;
+    background: #eee;    
+}
+section{    
+    height: 80vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+section.formulario{
+    align-items: center;
+}
+footer{
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;    
+    background: #222;
+    color: #fff;
+    font-size: 0.8em;
+}
+form{
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.form-header,
+.form-body,
+.form-footer{    
+    display: flex;
+    flex-flow: row nowrap;        
+}
+.form-header{
+    justify-content: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;    
+}
+.form-body{
+    flex-flow: column nowrap;        
+    padding: 15px;
+    background: #ddd;
+}
+.form-control{
+    flex: 1;
+}
+.form-control label{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+.form-control input, 
+.form-control textarea{
+    flex: 4;
+    padding: 10px;
+    margin: 5px;
+    font-size: 0.9em;
+}
+.form-control .label-textarea{
+    align-items: flex-start;
+}
+.form-control textarea{
+    height: 100px;
+    resize: none;
+}
+.form-footer{
+    height: 60px;
+    justify-content: center;
+    padding: 5px;
+    background: #666;
+}
+.form-footer input,
+.form-footer a{
+    flex: 1;
+    background: #222;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    margin: 3px;
+    font-size: 1em;
+}
+.form-footer a{
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.form-footer .olvido{
+    flex: 0.5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;    
+    padding: 0 13px;
+    text-align: end;
+    font-size: 0.8em;
+    background: #666;
+}
