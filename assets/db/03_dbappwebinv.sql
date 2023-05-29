@@ -43,7 +43,7 @@ CREATE TABLE CREDENTIALS (
   credential_id VARCHAR(30) NULL,
   credential_startdate DATE NOT NULL,
   credential_pass VARCHAR(150) NOT NULL,
-  credential_status TINYINT NOT NULL,
+  credential_status TINYINT(1) NOT NULL,
   INDEX ind_credential_user (credential_code ASC),
   PRIMARY KEY (credential_code),
   UNIQUE INDEX uq_credential_id (credential_id ASC),

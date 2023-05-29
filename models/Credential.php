@@ -116,7 +116,7 @@
                 $stmt->bindValue('credentialId', $this->getCredentialId());                
                 $stmt->bindValue('credentialStartDate', $this->getCredentialStartDate());                
                 $stmt->bindValue('credentialPass', sha1($this->getCredentialPass()));
-                $stmt->bindValue('credentialStatus', boolval($this->getCredentialStatus()));
+                $stmt->bindValue('credentialStatus', $this->getCredentialStatus());
                 $stmt->execute();                
             } catch (Exception $e) {
                 die($e->getMessage());

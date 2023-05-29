@@ -86,7 +86,12 @@ INSERT INTO USERS VALUES
 INSERT INTO CREDENTIALS VALUES
 ('admin-000001', null, 7318924, "2023-05-29", sha1('12345'), 1);
 
--- # Insertar Usuarios # --
+-- # Insertar Cliente Activo # --
+-- ------------------------------------------------------------------------------------- --
+INSERT INTO CREDENTIALS VALUES
+('customer-000002', null, 12121212, "2023-05-29", sha1('12345'), 0);
+
+-- # Insertar Vendedor # --
 -- ------------------------------------------------------------------------------------- --
 INSERT INTO USERS VALUES 
 (1, 'admin-2', 'Pepito', 'Perez', 'pepito@gmail.com'),
