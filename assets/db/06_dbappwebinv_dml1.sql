@@ -70,19 +70,25 @@
 -- 1.1.1. Datos Correctos -------------------------------------------------------------- --
 --        INSERT INTO __ VALUES ( __ , __ ) : ------------------------------------------ --
 -- ------------------------------------------------------------------------------------- --
+
+-- # Insertar Roles # --
+-- ------------------------------------------------------------------------------------- --
 INSERT INTO ROLES VALUES 
 (null, 'admin'),
-(null, 'person'),
+(null, 'user'),
 (null, 'customer'),
 (null, 'seller');
 
-INSERT INTO USUARIOS VALUES 
-(1, 'admin-1', 'Albeiro', 'Ramos', 'profealbeiro2020@gmail.com');
+-- # Insertar Administrador # --
+-- ------------------------------------------------------------------------------------- --
+INSERT INTO USERS VALUES 
+(1, 'admin-000001', 'Albeiro', 'Ramos', 'profealbeiro2020@gmail.com');
+INSERT INTO CREDENTIALS VALUES
+('admin-000001', null, 7318924, "2023-05-29", sha1('12345'), 1);
 
-INSERT INTO CREDENCIALES VALUES
-('admin-1', '../../img/usuario.png', 123456, "2022-06-11", sha1('12345'), 1);
-
-INSERT INTO USUARIOS VALUES 
+-- # Insertar Usuarios # --
+-- ------------------------------------------------------------------------------------- --
+INSERT INTO USERS VALUES 
 (1, 'admin-2', 'Pepito', 'Perez', 'pepito@gmail.com'),
 (3, 'customer-1', 'Marinita', 'García', 'marinita@gmail.com'),
 (3, 'customer-2', 'Jorge', 'Campos', 'jorge@gmail.com'),
@@ -246,10 +252,10 @@ WHERE codigo_user = 'admin-2';
 -- ------------------------------------------------------------------------------------- --
 SELECT * FROM ROLES;
 SELECT * FROM USERS;
-SELECT * FROM CREDENCIALES;
+SELECT * FROM CREDENTIALS;
+SELECT * FROM CUSTOMERS;
+SELECT * FROM EMPLOYEES;
 SELECT * FROM MENSAJES;
-SELECT * FROM VENDEDORES;
-SELECT * FROM CLIENTES;
 SELECT * FROM CATEGORIAS;
 SELECT * FROM PRODUCTOS;
 SELECT * FROM PEDIDOS;
