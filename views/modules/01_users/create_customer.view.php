@@ -1,8 +1,13 @@
 <div class="borde controles">
-    <a href="?c=Users&a=createUser" class="borde">Crear Usuario</a>
-    <a href="?c=Users&a=createSeller" class="borde">Crear Vendedor</a>
-    <a href="?c=Users&a=createAdmin" class="borde">Crear Admin</a>
-    <a href="?c=Users&a=readUser" class="borde">Consultar Usuarios</a>
+    <?php if ($rol == 1) : ?>
+        <a href="?c=Users&a=createUser" class="borde">Crear Usuario</a>
+        <a href="?c=Users&a=createSeller" class="borde">Crear Vendedor</a>
+        <a href="?c=Users&a=createAdmin" class="borde">Crear Admin</a>
+        <a href="?c=Users&a=readUser" class="borde">Consultar Usuarios</a>
+    <?php elseif ($rol == 4) : ?>
+        <a href="?c=Users&a=createCustomer" class="borde">Crear Cliente</a>'
+        <a href="?c=Users&a=readUser" class="borde">Consultar Usuarios</a>
+    <?php endif; ?>
 </div>
 <form action="" method="post" class="borde">
     <div class="borde form-header">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title>Cliente</title>
     <link rel="stylesheet" href="assets/css/styles_dashboard.css">
 </head>
 
@@ -32,18 +32,13 @@
         <main>
             <aside class="borde">
                 <div class="modulo">
-                    <h1>Administrador</h1>
-                    <a href="?c=Users&a=editProfile">Editar Perfil</a>
-                    <a href="?c=Messages&a=readMessageProfile">Mis Mensajes</a>
+                    <h1>Cliente</h1>
+                    <a href="">Editar Perfil</a>                    
                 </div>
                 <div class="modulo">
                     <h1>Usuarios</h1>
-                    <a href="?c=Roles&a=createRol">Crear Rol</a>
-                    <a href="?c=Roles&a=readRol">Consultar Roles</a>
-                    <a href="?c=Users&a=createUser">Crear Usuario</a>
-                    <a href="?c=Users&a=readUser">Consultar Usuarios</a>
-                    <a href="?c=Messages&a=createMessage">Crear Mensaje</a>
-                    <a href="?c=Messages&a=readMessage">Consultar Mensajes</a>
+                    <a href="">Crear Mensaje</a>
+                    <a href="">Consultar Mensajes</a>
                 </div>
                 <div class="modulo">
                     <h1>Módulo Principal</h1>
@@ -52,8 +47,8 @@
                 </div>
                 <div class="modulo">
                     <h1>Reportes</h1>
-                    <a href="?c=Reports&a=printedUserReport">Impreso Usuarios</a>
-                    <a href="?c=Reports&a=graphicUserReport">Gráfico Usuairos</a>
+                    <a href="">Imprimir Perfil</a>
+                    <a href="">Gráfico Perfil</a>
                 </div>
             </aside>
             <section class="borde">

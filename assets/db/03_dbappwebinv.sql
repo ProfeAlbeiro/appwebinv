@@ -1,4 +1,4 @@
-# DROP DATABASE DBAPPWEBINV;
+DROP DATABASE DBAPPWEBINV;
 -- -----------------------------------------------------
 -- ESTRUCTURA DBAPPWEBINV
 -- -----------------------------------------------------

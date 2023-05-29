@@ -6,11 +6,11 @@
         <div class="borde form-body">
             <div class="form-control">
                 <label for="">Usuario</label>
-                <input type="text" placeholder="Nombres">
+                <input type="text" name="userEmail" placeholder="Email">
             </div>
             <div class="form-control">
                 <label for="">Contraseña</label>
-                <input type="text" placeholder="Apellidos">
+                <input type="password" name="credentialPass" placeholder="Contraseña">
             </div>
         </div>
         <div class="borde form-footer">

@@ -220,7 +220,7 @@ INSERT INTO CLIENTES VALUES
 --      UPDATE __ SET __ = __ WHERE __ = __ : ------------------------------------------ --
 -- ------------------------------------------------------------------------------------- --
 UPDATE ROLES SET 
-nombre_rol = 'person'
+nombre_rol = 'user'
 WHERE codigo_rol = 2;
 
 UPDATE USUARIOS SET 

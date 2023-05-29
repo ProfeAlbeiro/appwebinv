@@ -15,12 +15,11 @@
             } catch (Exception $e) {
                 die($e->getMessage());
             }
-        }
+        }        
         public function __construct2($customerCode,$customerBirthDate){            
             $this->customerCode = $customerCode;
             $this->customerBirthDate = $customerBirthDate;
-        }
-        # Código de Cliente
+        }        
         public function setCustomerCode($customerCode){
             $this->customerCode = $customerCode;
         }

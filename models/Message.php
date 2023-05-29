@@ -113,7 +113,8 @@
         public function readMessage(){
             try {
                 $messageList = [];
-                $sql = 'SELECT * FROM USERS INNER JOIN MESSAGES ON users.user_code = messages.user_code;';
+                $sql = 'SELECT * FROM USERS INNER JOIN MESSAGES 
+                        ON USERS.user_code = MESSAGES.user_code';
                 $stmt = $this->dbh->query($sql);                
                 foreach ($stmt->fetchAll() as $message) {
                     $messageList[] = new User(
